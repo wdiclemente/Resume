@@ -5,6 +5,8 @@
 \newsectionwidth{20pt} % reduce the indent in the sections
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{amsmath}
+\renewcommand\labelitemi{--}
 \setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
 
 \begin{document} 
@@ -35,22 +37,28 @@
     {\bf Proficient:} C++, Python, ROOT/PyROOT (Data analyis framework)\\
     {\bf Familiar:} Unix-based OS, \LaTeX, Git, Java, MySQL, Matlab, Fortran
 
-\section{RESEARCH EXPERIENCE}\vspace{-10pt}
-   \begin{tabbing}
-   \hspace{2.5in}\= \hspace{2.85in} \= \kill % set up two tab positions
-    {\bf ATLAS Experiment (CERN)} \>University of Pennsylvania \> 2014-2019\\
-    {\it Particle physics researcher} \> Philadelphia, PA \\
-    \\
-    \> Duke University \> 2010-2013 \\
-    \> Durham, NC
-   \end{tabbing}\vspace{-18pt}
+\section{RESEARCH EXPERIENCE}%\vspace{-10pt}
+    {\bf $\boldsymbol{W}$ Boson Analysis and Detector Alignment with the CERN ATLAS Experiment}\\
+    University of Pennsylvania (2014-2019)/Duke University (2010-2013)\\
+    {\it Particle physics researcher}
 
-   Measured same-sign $W$ boson scattering cross section with 2015-2016 ATLAS data.
-   Modified existing method for modeling background contribution from fake leptons to achieve better data-simulation agreement.
-   Developed new method for reducing 3-lepton backgrounds via 2D cuts, tests showed up to 20\% additional background rejection.
-   Analyzed prospects for same analysis at future HL-LHC collider.
-   Increased signal significance by nearly 60\% by optimizing selection using a random grid search algorithm, and corrected overpredicted top quark backgrounds by implementing an analogue for a particle isolation requirement missing from the simulation.
-   Corrected for misaligned detector sensors by applying corrections during data reconstruction derived using a global $\chi^2$ minimization of track-hit residuals from millions of particle tracks.
+    ATLAS's first observation of same-sign $W$ boson scattering using 2015-2016 data:
+    \begin{itemize}
+    \item Modified existing method for modeling background contribution from fake leptons to achieve better data-simulation agreement
+    \item Developed new method using 2D cuts to reduce 3-lepton backgrounds, tests showed up to 20\% additional background rejection
+    \end{itemize}
+    Prospects for same-sign $W$ boson scattering at future HL-LHC collider:
+    \begin{itemize}
+    \item Increased signal significance by nearly 60\% by optimizing selection using a random grid search algorithm
+    \item Corrected overprediction of top quark backgrounds by implementing an analogue for a particle isolation requirement missing from the simulation
+    \end{itemize}
+    Corrected for misaligned detector sensors by applying corrections during data reconstruction derived using a global $\chi^2$ minimization of track-hit residuals from millions of particle tracks
+    %Measured same-sign $W$ boson scattering cross section with 2015-2016 ATLAS data.
+   %Modified existing method for modeling background contribution from fake leptons to achieve better data-simulation agreement.
+   %Developed new method for reducing 3-lepton backgrounds via 2D cuts, tests showed up to 20\% additional background rejection.
+   %Analyzed prospects for same analysis at future HL-LHC collider.
+   %Increased signal significance by nearly 60\% by optimizing selection using a random grid search algorithm, and corrected overpredicted top quark backgrounds by implementing an analogue for a particle isolation requirement missing from the simulation.
+   %Corrected for misaligned detector sensors by applying corrections during data reconstruction derived using a global $\chi^2$ minimization of track-hit residuals from millions of particle tracks.
 
 %%%%%
 % stuff from CV, saved for reference
