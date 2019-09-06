@@ -1,7 +1,8 @@
 % LaTeX file for resume 
 % This file uses the resume document class (res.cls)
 
-\documentclass[11pt]{res}
+\documentclass[10pt]{res}
+%\topmargin=-0.25in
 \newsectionwidth{20pt} % reduce the indent in the sections
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
@@ -11,11 +12,11 @@
 
 \begin{document} 
 
-\name{\scshape{William K. DiClemente}\\[12pt]}     % the \\[12pt] adds a blank
-	
+\name{\scshape{William K. DiClemente, PhD}\\[12pt]}     % the \\[12pt] adds a blank
 			        % line after name      
-\address{{\bf CONTACT INFORMATION}\\will.diclemente@gmail.com\\(414) 617-2645}
-\address{{\bf CURRENT ADDRESS}\\3200 Summer St. Unit 5\\Philadelphia, PA 19104}%\\(414) 964-3074\\wdic@sas.upenn.edu}
+\address{}
+\address{\hspace{31pt}wdic@sas.upenn.edu\\\hspace{55pt}(414) 617-2645\\LinkedIn: {\tt bit.ly/2lzZi0U}}
+%\address{www.linkedin.com/in/will-diclemente/}%\\(414) 964-3074\\wdic@sas.upenn.edu}
 %\address{\bf PERMANENT ADDRESS \\ 110 Brant Avenue \\  Upper Saddle
 %         River,   NJ 07458 \\  (201) 555-9509}
                                   
@@ -25,46 +26,48 @@
 %    A summer teaching position that relates to my physics background.          
  
 \section{EDUCATION}          
-    {\it University of Pennsylvania, Philadelphia, PA} \\
-    Doctor of Philosophy, Physics (Experimental Particle Physics), May 2019 \\
+    {\bf University of Pennsylvania}, Philadelphia, PA \\
+    {\bf PhD}, Experimental Particle Physics, May 2019 \\
     Masters of Science, Physics, May 2015 \\
     \newline
-    {\it Duke University, Durham, NC} \\        
+    {\bf Duke University}, Durham, NC \\        
     Bachelor of Science, Physics (High Distinction), May 2013   \\       
     Minors, Mathematics, May 2013 
  
 \section{TECHNICAL SKILLS}
-    {\bf Proficient:} C++, Python, ROOT/PyROOT (Data analyis framework)\\
-    {\bf Familiar:} Unix-based OS, \LaTeX, Git, Java, MySQL %, Matlab, Fortran
+    {\bf Proficient in} C++, Python, ROOT/PyROOT (Data analyis framework)\\
+    {\bf Experienced with} Unix-based OS, \LaTeX, MySQL, Bash, Git, Java %, Matlab, Fortran
 
 \section{RESEARCH EXPERIENCE}%\vspace{-10pt}
-    {\bf $\boldsymbol{W}$ Boson Analysis and Detector Alignment with the CERN ATLAS Experiment}\\
-    University of Pennsylvania (2014-2019)/Duke University (2010-2013)\\
-    {\it Particle Physics Researcher}
+    {\bf Particle Physics Research with the ATLAS Experiment at CERN}\\
+    University of Pennsylvania (2014-2019)/Duke University (2010-2013)
 
-    ATLAS's first observation of same-sign $W$ boson scattering using 2015-2016 data:
+    As a physics researcher, I used a combination of ROOT, experiment-wide frameworks, and personal analysis-specific software written in C++ and Python to read, analyze, and visualize terabytes of ATLAS data, both real and simulated.
+    My research was highly collaborative; our analysis teams would regularly report progress with parent groups, as well as interact with experts on detector performance and with theorists for additional ideas and models to test.
+    
+    % large data set -- terabytes (petabytes) in size
+    % existing analysis frameworks in C++ and python
+    % write own code in C++ and python, analyze/visualize with ROOT
+    % problem solving -> top background too high, update fake factor, etc
+    % leading role in WW upgrade, leading in fake factor method
+    % Collaborative, worked in analysis group and performance group (talk to other analyzers within or outside of your group, performance people, theorists)
+
+    {\bf Research highlights} include:
     \begin{itemize}
-    \item Modified existing method for modeling background contribution from fake leptons by including more measured quantities in order to achieve better data-simulation agreement
-    \item Developed new method using 2D cuts targeting 3-lepton backgrounds, reducing them by up to 20\% in some tests
-    \end{itemize}
-    Prospects for same-sign $W$ boson scattering at future HL-LHC collider:
-    \begin{itemize}
-    \item Increased signal significance by nearly 60\% by optimizing selection using a random grid search algorithm
-    \item Corrected overprediction of top quark backgrounds by implementing an analogue for a particle isolation requirement missing from the simulation
-    \end{itemize}
-    Alignment of the ATLAS Inner Detector:
-    \begin{itemize}
-    \item Corrected misaligned sensors by applying corrections derived using a global $\chi^2$ minimization of track-hit residuals from millions of particle tracks
-    \item Measured and corrected momentum biases in the detector using 2D maps created from fits of electron energy and momentum distributions
+    %\item Played a leading role in an analysis using simulated data for a proposed future collider experiment.
+    \item Played a leading role in the development of an updated technique for modeling troublesome background processes in a high-profile physics analysis.
+    \item Slimmed and skimmed large data sets (several TB) into smaller, analysis-specific samples for several different analyses.
+    \item Optimized one analysis's signal selection using a random grid search algorithm, improving the significance by nearly 60\%.
+    \item Introduced a new set of 2D cuts to an analysis which reduced a major background by 20\%.
+    \item Monitored detector performance for possible biases in data reconstruction using 2D maps built from fits to distributions of various measured quantities.
+    \item Analysis work resulted in 4 papers, as well as being a contributing author on over 100 additional ATLAS publications.
     \end{itemize}
 
-    %Measured same-sign $W$ boson scattering cross section with 2015-2016 ATLAS data.
-   %Modified existing method for modeling background contribution from fake leptons to achieve better data-simulation agreement.
-   %Developed new method for reducing 3-lepton backgrounds via 2D cuts, tests showed up to 20\% additional background rejection.
-   %Analyzed prospects for same analysis at future HL-LHC collider.
-   %Increased signal significance by nearly 60\% by optimizing selection using a random grid search algorithm, and corrected overpredicted top quark backgrounds by implementing an analogue for a particle isolation requirement missing from the simulation.
-   %Corrected for misaligned detector sensors by applying corrections during data reconstruction derived using a global $\chi^2$ minimization of track-hit residuals from millions of particle tracks.
+\section{TEACHING EXPERIENCE}%\vspace{-10pt}
+    {\bf Introductory Physics Laboratory Teaching Assistant}\\
+    University of Pennsylvania (2014-2015)
 
+    Taught three semesters of classical mechanics and electricity and magnetism labs. Responsibilities included lab demos and guidance, teaching necessary content if not covered in lecture, and lab report grading.
 %%%%%
 % stuff from CV, saved for reference
 %%%%%
@@ -98,10 +101,10 @@
 %
 %   Hosted and provided commentary for a number of speedrunning tournaments on Twitch for the game The Binding of Isaac as well as speedrunning it myself.
 
-\section{SELECTED PUBLICATIONS}
-    DiClemente, William K., {\it Measurement of Electroweak Production of Same-Sign W Boson Pairs with ATLAS}.  PhD thesis. {\tt http://cds.cern.ch/record/2674035}. Presented 21 Feb, 2019.
+%\section{SELECTED PUBLICATIONS}
+%    DiClemente, William K., {\it Measurement of Electroweak Production of Same-Sign W Boson Pairs with ATLAS}.  PhD thesis. {\tt http://cds.cern.ch/record/2674035}. Presented 21 Feb, 2019.
 
-    ATLAS Collaboration, {\it Observation of electroweak production of a same-sign WW boson pair in association with two jets in pp collisions at $\sqrt{s}=13~\textrm{TeV}$ with the ATLAS detector}. Submitted to Phys. Rev. Lett. June 2019. {\tt arXiv}:1906.03203 [hep-ex].
+%    ATLAS Collaboration, {\it Observation of electroweak production of a same-sign WW boson pair in association with two jets in pp collisions at $\sqrt{s}=13~\textrm{TeV}$ with the ATLAS detector}. Submitted to Phys. Rev. Lett. June 2019. {\tt arXiv}:1906.03203 [hep-ex].
 %%%
 % ``list at most two papers''
 %%%
